@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servLet:
+    context-path: /bootcamp
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: postgres://hcsuvqyxzjaltd:c3be49e8a5f4be578235c96051b0cf13038120395fb85c2c70ef0fa701a7699f@ec2-18-215-111-67.compute-1.amazonaws.com:5432/dlrehcn73cian
+    username: hcsuvqyxzjaltd
+    password: c3be49e8a5f4be578235c96051b0cf13038120395fb85c2c70ef0fa701a7699f
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+
+application:
+  description: Projeto criado por Edson CCS para o bootcamp DIO - Santander

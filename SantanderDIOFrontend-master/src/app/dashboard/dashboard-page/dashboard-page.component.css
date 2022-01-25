@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Material Progress bar - Custom color*/
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: var(--primary-color);
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: var(--background-color);
+}
+
+::ng-deep .mat-progress-bar {
+  border-radius: 2px;
+}
+
+/*Material Progress Spinner - Custom color*/
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: var(--primary-color);
+}

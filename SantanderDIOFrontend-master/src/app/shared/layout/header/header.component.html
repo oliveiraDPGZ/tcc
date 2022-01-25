@@ -1,0 +1,9 @@
+<div *ngIf="loaderService.isLoading | async" class="loader-container">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<header class="header">
+  <img src="assets/logoSantander.svg" alt="Logo" width="164px" height="auto">
+</header>
+<div *ngIf="loaderService.isLoading | async" class="loader-container-spinner">
+  <mat-spinner></mat-spinner>
+</div>
